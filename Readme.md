@@ -1,17 +1,17 @@
 Playwright
 commands----------------------------------------------------------------------->
 
-cmd: npx init playwright@latest -> To initiate the playwright
-cmd: npx playwright codegen <TARGET APPLICATION URL> -> To record the target application
-cmd: npx playwright test -> Runs test on all the files(end-to-end)
-cmd: npx playwright test <file name> -> Runs specific file in tests folder
-cmd: npx playwright test --ui ->
+cmd: **npx init playwright@latest** -> To initiate the playwright
+cmd: **npx playwright codegen** <TARGET APPLICATION URL> -> To record the target application
+cmd: **npx playwright test** -> Runs test on all the files(end-to-end)
+cmd: **npx playwright test <file name>** -> Runs specific file in tests folder
+cmd: **npx playwright test --ui** ->
 
 
 
 ---------------------------------------------------------------------------->
 
-npx playwright init-agents --loop=vscode  --> To initialize Playwright agents
+**npx playwright init-agents --loop=vscode**  --> To initialize Playwright agents
 
 The above command generates 3 files. 
 1Generator -> Agent to create Automated browser tests using playwright. Instructions are given to generate playwright tests, 
