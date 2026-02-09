@@ -5,7 +5,9 @@ cmd: **npx init playwright@latest** -> To initiate the playwright
 cmd: **npx playwright codegen** <TARGET APPLICATION URL> -> To record the target application
 cmd: **npx playwright test** -> Runs test on all the files(end-to-end)
 cmd: **npx playwright test <file name>** -> Runs specific file in tests folder
-cmd: **npx playwright test --ui** ->
+cmd: **npx playwright test --ui** -> Opens Playwright UI
+cmd: **npx playwright test <file name> --headed** -> Runs specific file in tests folder by opening the browsers
+cmd: **npx playwright show-report** -> will show the test report
 
 
 
