@@ -3,7 +3,7 @@ import { chromium } from 'playwright';
 import { parse } from 'path/win32';
 
 test('test', async () => {
-    const browser = await chromium.launch({ headless: false });
+    const browser = await chromium.launch({ headless: true });
     const page = await browser.newPage();
     await page.goto('https://www.saucedemo.com/');
     await page.waitForTimeout(3000);
