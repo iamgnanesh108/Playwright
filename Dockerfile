@@ -4,18 +4,12 @@ FROM mcr.microsoft.com/playwright:v1.58.1-jammy
 # Set working directory
 WORKDIR /workspace
 
-COPY . /workspace/
+COPY . /workspace
 
-# Navigate into your Playwright project (adjust path!)
-WORKDIR /workspace/Playwright/saucedemo/tests
+WORKDIR /workspace/saucedemo
 
-# Install required tools
-RUN apt-get update && \
-    npm install -g serve
+RUN npm install && apt-get update && npm install -g serve
 
-# Install dependencies
-RUN npm install
+WORKDIR /workspace/saucedemo/tests
 
-# Run tests and serve report automatically
-CMD npx playwright test --reporter=html && \
-    serve -s playwright-report -l 8080
+RUN npx playwright test --reporter=html && serve -s playwright-report -l 8080
