@@ -3,9 +3,9 @@
 #sudo su -
 
 #---Install Git ---
-yum install git -y
-git clone https://github.com/iamgnanesh108/Playwright.git
-cd Playwright
+#yum install git -y
+#git clone https://github.com/iamgnanesh108/Playwright.git
+#cd Playwright
 
 
 
