@@ -16,6 +16,8 @@ RUN npm install
 # Install AWS CLI for uploading reports
 RUN apt-get update && apt-get install -y awscli && rm -rf /var/lib/apt/lists/*
 
+WORKDIR /workspace/saucedemo/tests
+
 # Run Playwright tests and upload report to S3
 # Replace BUCKET_NAME with your actual S3 bucket name
-CMD sh -c "npx playwright test --reporter=html && aws s3 cp ./playwright-report s3://BUCKET_NAME/playwright-report-$(date +%Y%m%d%H%M%S)/ --recursive"
+CMD sh -c "npx playwright test --reporter=html && aws s3 cp /workspace/saucedemo/playwright-report s3://playwright-pw-sample/playwright-report-$(date +%Y%m%d%H%M%S)/ --recursive"
