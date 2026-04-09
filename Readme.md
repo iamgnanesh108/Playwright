@@ -32,5 +32,10 @@ we can provide login details and credentials in this file.
 
 NOTE: We can use project dependencies in playwright config file(playwright.config.ts).
 
+----------------------------------------------------------------------------------------------------------------
 
+1. create s3 bucket with public access
+2. create Iam role and attach it to ec2
+3. chmod +x setupdc.sh
+4. ./setupdc.sh
 
