@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  myapp:
+    build: .
+    image: my-image
+    ports:
+      - "8080-8082:8080"   # maps host ports 8080–8082 to container port 8080
+    deploy:
+      replicas: 3          # run 3 containers in parallel
+      restart_policy:
+        condition: always
