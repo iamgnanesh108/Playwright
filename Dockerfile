@@ -1,6 +1,10 @@
 # Base: official Playwright image
 FROM mcr.microsoft.com/playwright:v1.58.1-jammy
 
+#Timezone declaration for cli
+ENV TZ=Asia/Kolkata
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Set working directory
 WORKDIR /workspace
 
