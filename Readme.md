@@ -34,7 +34,7 @@ NOTE: We can use project dependencies in playwright config file(playwright.confi
 
 ----------------------------------------------------------------------------------------------------------------
 
-1. create s3 bucket with public access
+1. create s3 bucket with public access & change object ownership
 2. create Iam role and attach it to ec2
 3. chmod +x setupdc.sh
 4. ./setupdc.sh
